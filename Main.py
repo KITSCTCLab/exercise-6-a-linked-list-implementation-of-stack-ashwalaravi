@@ -15,6 +15,7 @@ class Stack:
     self.top = newnode
 
   def pop(self) -> None:
+    
     # Write your code here
     if self.top==None:
       return None
@@ -31,9 +32,11 @@ class Stack:
     It prints all the elements of stack.
     """
     # Write your code here 
-     if self.top==None:
+    if self.top==None:
+      
       print("None")
     else:
+      
       iternode = self.top
       while(iternode != None):
         print(iternode.data, "->", end=" ")
