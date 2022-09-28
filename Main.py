@@ -39,7 +39,8 @@ class Stack:
       
       iternode = self.top
       while(iternode != None):
-        print(iternode.data, "->", end=" ")
+        print(iternode.data, end="")
+        print("=>",end="")
         iternode = iternode.next
         if(iternode==None):
           print("None")
